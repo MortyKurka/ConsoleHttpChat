@@ -34,10 +34,12 @@ dotnet publish src/Chat.sln -c Release --runtime linux-x64 --self-contained fals
 ## Структура проекта
 ```text
 ConsoleChat
-│├── src/               #Исходный код
-││├── Chat.Server/      #Исходный код сервера
-││├── Chat.Shared/      #Исходный код библиотеки классов
-││├── Chat.TcpClient/   #Исходный код клиента
-│├── docs/              #Документация
-│├── publish/           #Собранное приложение (появляется только после сборки)
+├── src/               #Исходный код
+│├── Chat.Server/      #Исходный код сервера
+│├── Chat.Shared/      #Исходный код библиотеки классов
+│├── Chat.TcpClient/   #Исходный код клиента
+├── docs/              #Документация
+├── publish/           #Собранное приложение (появляется только после сборки)
 ```
+## Документация 
+**https://mortykurka.github.io/ConsoleChat/**
