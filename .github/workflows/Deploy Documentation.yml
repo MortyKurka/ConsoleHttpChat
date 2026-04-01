@@ -33,7 +33,7 @@ jobs:
       
       - name: Build documentation
         run: |
-          cd .docfx
+          cd docs
           docfx docfx.json
       
       - name: Upload artifact
@@ -43,4 +43,3 @@ jobs:
       
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-  
