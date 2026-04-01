@@ -1,4 +1,49 @@
 {
+  "api/Chat.Server.TcpChatServer.html": {
+    "href": "api/Chat.Server.TcpChatServer.html",
+    "title": "Class TcpChatServer | Console.Chat Documentation",
+    "summary": "Class TcpChatServer TCP chat server that handles client connections and message broadcasting. Inheritance object TcpChatServer Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: Chat.Server Assembly: Chat.Server.dll Syntax public class TcpChatServer Constructors | Edit this page View Source TcpChatServer() Declaration public TcpChatServer() Properties | Edit this page View Source IsOnline Declaration public bool IsOnline { get; } Property Value Type Description bool Methods | Edit this page View Source HandleClient(TcpClient) Declaration public Task HandleClient(TcpClient client) Parameters Type Name Description TcpClient client Returns Type Description Task | Edit this page View Source StartAsync(IPAddress, int) Declaration public Task StartAsync(IPAddress ip, int port) Parameters Type Name Description IPAddress ip int port Returns Type Description Task"
+  },
+  "api/Chat.Server.html": {
+    "href": "api/Chat.Server.html",
+    "title": "Namespace Chat.Server | Console.Chat Documentation",
+    "summary": "Namespace Chat.Server Classes TcpChatServer TCP chat server that handles client connections and message broadcasting."
+  },
+  "api/Chat.Shared.ICommunicator.html": {
+    "href": "api/Chat.Shared.ICommunicator.html",
+    "title": "Interface ICommunicator | Console.Chat Documentation",
+    "summary": "Interface ICommunicator An interface for representing an entity that can communicate Namespace: Chat.Shared Assembly: Chat.Shared.dll Syntax public interface ICommunicator Properties | Edit this page View Source IsOnline Displays whether an entity is online Declaration bool IsOnline { get; } Property Value Type Description bool Methods | Edit this page View Source ReceiveLoopAsync() Message reception cycle Declaration Task ReceiveLoopAsync() Returns Type Description Task | Edit this page View Source SendAsync(string) Data sending method Declaration Task SendAsync(string msg) Parameters Type Name Description string msg Returns Type Description Task"
+  },
+  "api/Chat.Shared.Message.html": {
+    "href": "api/Chat.Shared.Message.html",
+    "title": "Class Message | Console.Chat Documentation",
+    "summary": "Class Message record для хранения сообщений Inheritance object Message Implements IEquatable<Message> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) Namespace: Chat.Shared Assembly: Chat.Shared.dll Syntax public record Message : IEquatable<Message> Constructors | Edit this page View Source Message(string?) record для хранения сообщений Declaration public Message(string? Content) Parameters Type Name Description string Content The message content. Properties | Edit this page View Source Content The message content. Declaration public string? Content { get; init; } Property Value Type Description string | Edit this page View Source TimeStamp Time to send the message Declaration public DateTime TimeStamp { get; } Property Value Type Description DateTime Methods | Edit this page View Source ToString() Converts a message to a string Declaration public override string ToString() Returns Type Description string Returns the message as a string Overrides object.ToString() Implements IEquatable<T>"
+  },
+  "api/Chat.Shared.Test.html": {
+    "href": "api/Chat.Shared.Test.html",
+    "title": "Class Test | Console.Chat Documentation",
+    "summary": "Class Test Test class for documentation Inheritance object Test Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: Chat.Shared Assembly: Chat.Shared.dll Syntax public class Test Properties | Edit this page View Source TestProperty Test property Declaration public string TestProperty { get; set; } Property Value Type Description string Methods | Edit this page View Source TestMethod() Test method Declaration public string TestMethod() Returns Type Description string Test string"
+  },
+  "api/Chat.Shared.html": {
+    "href": "api/Chat.Shared.html",
+    "title": "Namespace Chat.Shared | Console.Chat Documentation",
+    "summary": "Namespace Chat.Shared Classes Message record для хранения сообщений Test Test class for documentation Interfaces ICommunicator An interface for representing an entity that can communicate"
+  },
+  "api/Chat.TcpClient.IClient.html": {
+    "href": "api/Chat.TcpClient.IClient.html",
+    "title": "Interface IClient | Console.Chat Documentation",
+    "summary": "Interface IClient Inherited Members ICommunicator.IsOnline ICommunicator.SendAsync(string) ICommunicator.ReceiveLoopAsync() Namespace: Chat.TcpClient Assembly: Chat.TcpClient.dll Syntax public interface IClient : ICommunicator Methods | Edit this page View Source ConnectAsync(IPAddress, int) Declaration Task ConnectAsync(IPAddress ip, int port) Parameters Type Name Description IPAddress ip int port Returns Type Description Task | Edit this page View Source DisconnectAsync() Declaration Task DisconnectAsync() Returns Type Description Task"
+  },
+  "api/Chat.TcpClient.TcpChatClient.html": {
+    "href": "api/Chat.TcpClient.TcpChatClient.html",
+    "title": "Class TcpChatClient | Console.Chat Documentation",
+    "summary": "Class TcpChatClient TCP client implementation for chat communication. Inheritance object TcpChatClient Implements IClient ICommunicator Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: Chat.TcpClient Assembly: Chat.TcpClient.dll Syntax public class TcpChatClient : IClient, ICommunicator Constructors | Edit this page View Source TcpChatClient() Declaration public TcpChatClient() Properties | Edit this page View Source IsOnline Displays whether an entity is online Declaration public bool IsOnline { get; } Property Value Type Description bool Methods | Edit this page View Source ConnectAsync(IPAddress, int) Declaration public Task ConnectAsync(IPAddress ip, int port) Parameters Type Name Description IPAddress ip int port Returns Type Description Task | Edit this page View Source DisconnectAsync() Declaration public Task DisconnectAsync() Returns Type Description Task | Edit this page View Source ReceiveLoopAsync() Message reception cycle Declaration public Task ReceiveLoopAsync() Returns Type Description Task | Edit this page View Source SendAsync(string) Data sending method Declaration public Task SendAsync(string message) Parameters Type Name Description string message Returns Type Description Task Events | Edit this page View Source OnConnect User connection event Declaration public event Action? OnConnect Event Type Type Description Action | Edit this page View Source OnDisconnect User disconnection event Declaration public event Action? OnDisconnect Event Type Type Description Action | Edit this page View Source OnMessageReceived Incoming message event Declaration public event Action<string?>? OnMessageReceived Event Type Type Description Action<string> Implements IClient ICommunicator"
+  },
+  "api/Chat.TcpClient.html": {
+    "href": "api/Chat.TcpClient.html",
+    "title": "Namespace Chat.TcpClient | Console.Chat Documentation",
+    "summary": "Namespace Chat.TcpClient Classes TcpChatClient TCP client implementation for chat communication. Interfaces IClient"
+  },
   "articles/getting-started.html": {
     "href": "articles/getting-started.html",
     "title": "Getting Started | Console.Chat Documentation",
